@@ -1,9 +1,14 @@
-// window.alert("isso mesmo");
-const href = window.location.href;
+// Retorne o url da página atual utilizando o objeto window
+const href = window.location.href; // pode retirar a palavra window que funciona tbm
 console.log(href);
 
-if (href === "http://127.0.0.1:5500/o-que-e-o-dom/index.html") {
-  console.log("É igual");
-}
-
-const h1selecionado = document.querySelector("h1");
+// Seleciona o primeiro elemento da página que
+// possua a classe ativo
+const elementoAtivo = document.querySelector(".ativo");
+console.log(elementoAtivo);
+// Retorne a linguagem do navegador
+const language = navigator.language;
+console.log(language);
+// Retorne a largura da janela
+const largura = window.innerWidth;
+console.log(largura);
